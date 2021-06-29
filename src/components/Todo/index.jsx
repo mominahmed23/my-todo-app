@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import ListItem from './ListItem'
 
 const Todo = () => {
     const [showInput, setshowInput] = useState(false);
@@ -43,7 +44,7 @@ const Todo = () => {
             {todoList.length ? (
                    <div>
                    <ul>
-                       {todoList.map((item, index) => <li key={item}>{item}<button onClick={()=>onDelete(index)}>del</button></li>)}
+                       {todoList.map((item, index) => <ListItem key={item} item={item} index={index} onDelete={onDelete} />)}
                    </ul>
                </div>
             ) :(null)}

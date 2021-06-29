@@ -1,10 +1,10 @@
 import './App.css';
-import Todo from './components/Todo';
+import ColorSelector from './components/ColorSelector';
 
 function App() {
   return (
     <>
-     <Todo />
+     <ColorSelector />
     </>
   );
 }
